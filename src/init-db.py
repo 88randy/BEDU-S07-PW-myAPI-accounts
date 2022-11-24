@@ -2,6 +2,7 @@ import os
 import mysql.connector as sql
 
 if __name__ == '__main__':
+        print(os.environ['MYSQL_PORT'])
         cnx = sql.connect(
                 host=os.environ['MYSQL_IP'],
                 port=os.environ['MYSQL_PORT'],
